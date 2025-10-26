@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * Extension Manager configuration for dh_legacy_asset_resolver
+ */
+
+$EM_CONF[$_EXTKEY] = [
+    'title' => 'DotHome Legacy Asset Resolver',
+    'description' => 'Resolves legacy /typo3conf/ext/ asset paths to TYPO3 v13 _assets paths via PSR-15 middleware. Enables seamless migration from TYPO3 v11/v12 to v13 by redirecting hardcoded extension asset URLs.',
+    'category' => 'fe',
+    'author' => 'DotHome',
+    'author_email' => 'dev@dothome.at',
+    'author_company' => 'DotHome',
+    'state' => 'stable',
+    'version' => '13.0.0',
+    'constraints' => [
+        'depends' => [
+            'typo3' => '12.0.0-13.4.99',
+        ],
+        'conflicts' => [],
+        'suggests' => [],
+    ],
+    'autoload' => [
+        'psr-4' => [
+            'Dothome\\DhLegacyAssetResolver\\' => 'Classes/',
+        ],
+    ],
+];

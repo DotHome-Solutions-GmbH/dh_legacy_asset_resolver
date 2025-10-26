@@ -1,0 +1,13 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Dothome\DhLegacyAssetResolver\:
+    resource: '../Classes/*'
+
+  # Asset Hash Resolver Service
+  Dothome\DhLegacyAssetResolver\Service\AssetHashResolver:
+    arguments:
+      $runtimeCache: '@cache.runtime'

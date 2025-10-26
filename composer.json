@@ -1,0 +1,39 @@
+{
+  "name": "dothome/dh-legacy-asset-resolver",
+  "type": "typo3-cms-extension",
+  "description": "Resolves legacy /typo3conf/ext/ asset paths to TYPO3 v13 _assets paths via PSR-15 middleware",
+  "keywords": [
+    "TYPO3",
+    "extension",
+    "assets",
+    "middleware",
+    "migration",
+    "v13"
+  ],
+  "homepage": "https://dothome.at",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "DotHome",
+      "email": "dev@dothome.at",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "typo3/cms-core": "^11.5 || ^12.4 || ^13.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Dothome\\DhLegacyAssetResolver\\": "Classes/"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "dh_legacy_asset_resolver"
+    },
+    "branch-alias": {
+      "dev-master": "13.0.x-dev"
+    }
+  }
+}
