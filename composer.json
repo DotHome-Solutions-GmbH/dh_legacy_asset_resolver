@@ -33,7 +33,8 @@
       "extension-key": "dh_legacy_asset_resolver"
     },
     "branch-alias": {
-      "dev-master": "13.0.x-dev"
+      "dev-master": "13.0.x-dev",
+      "dev-t3v13": "13.0.x-dev"
     }
   }
 }
