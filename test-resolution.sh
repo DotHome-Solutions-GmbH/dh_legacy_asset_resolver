@@ -16,7 +16,7 @@ echo
 declare -a TEST_PATHS=(
     "/typo3conf/ext/dh_essentials/Resources/Public/Fonts/fontawesome-pro/fa-brands-400.woff2"
     "/typo3conf/ext/theme_dothomeportal/Resources/Public/Fonts/roboto-v30-latin/roboto-v30-latin-regular.woff2"
-    "/typo3conf/ext/configuration_dhdemoportal/Resources/Public/Images/bg-body.jpg"
+    "/typo3conf/ext/configuration_silonext/Resources/Public/Images/bg-body.jpg"
     "/typo3conf/ext/non_existent_extension/Resources/Public/test.css"
 )
 
